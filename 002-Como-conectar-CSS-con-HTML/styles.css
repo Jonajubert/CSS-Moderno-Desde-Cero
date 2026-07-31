@@ -3,7 +3,7 @@
 Archivo: styles.css
 ========================================
 */
-
+/*Aca definimos a quien le aplicamos el estilo, en este cado body*/
 body{
 
     font-family: Arial, Helvetica, sans-serif;
@@ -19,7 +19,7 @@ h1{
     color:#0d6efd;
 
 }
-
+/*Aca definimos a quien le aplicamos el estilo, pero utilizando la etiqueta de class*/
 .descripcion{
 
     color:#444;
