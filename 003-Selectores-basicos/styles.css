@@ -1,0 +1,33 @@
+/*
+========================================
+CSS MODERNO DESDE CERO
+Capítulo 003 - Selectores básicos
+========================================
+*/
+
+
+/* SELECTOR DE ETIQUETA
+   Selecciona todos los elementos <p>.
+*/
+p {
+    color: #555;
+}
+
+
+/* SELECTOR DE CLASE
+   El punto (.) indica que buscamos
+   elementos con la clase "destacado".
+*/
+.destacado {
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+
+
+/* SELECTOR DE ID
+   El símbolo (#) permite seleccionar
+   un elemento mediante su ID.
+*/
+#titulo-principal {
+    color: #264de4;
+}
