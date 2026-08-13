@@ -1,0 +1,37 @@
+/*
+========================================
+CSS MODERNO DESDE CERO
+Capítulo 004 - Colores
+========================================
+*/
+
+
+/* Color utilizando un nombre */
+h1 {
+    color: blue;
+}
+
+
+/* Color hexadecimal */
+h2 {
+    color: #264de4;
+}
+
+
+/* Color utilizando RGB */
+p {
+    color: rgb(60, 60, 60);
+}
+
+
+/* Color utilizando HSL */
+h3 {
+    color: hsl(230, 75%, 52%);
+}
+
+
+/* Color del texto y del fondo */
+.destacado {
+    color: white;
+    background-color: #264de4;
+}
