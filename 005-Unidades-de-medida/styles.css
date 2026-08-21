@@ -1,0 +1,36 @@
+/*
+========================================
+CSS MODERNO DESDE CERO
+Capítulo 005 - Unidades de medida
+========================================
+*/
+
+
+/* px: medida absoluta */
+header {
+    padding: 20px;
+}
+
+
+/* rem: relativo al tamaño de fuente raíz */
+h1 {
+    font-size: 2rem;
+}
+
+
+/* %: relativo al contexto de la propiedad */
+.contenedor {
+    width: 80%;
+}
+
+
+/* vw: porcentaje del ancho del viewport */
+.tarjeta {
+    width: 50vw;
+}
+
+
+/* vh: porcentaje de la altura del viewport */
+.tarjeta {
+    min-height: 20vh;
+}
