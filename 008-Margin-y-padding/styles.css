@@ -1,0 +1,24 @@
+/* CSS Moderno Desde Cero
+   Capítulo 008 - Margin y padding */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    padding: 20px;
+}
+
+.caja {
+    background-color: #4e73df;
+    color: white;
+
+    padding: 20px; /* Espacio interno */
+    margin: 30px;  /* Espacio externo */
+
+    border-radius: 8px;
+}
