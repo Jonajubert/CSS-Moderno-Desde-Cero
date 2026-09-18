@@ -1,0 +1,58 @@
+/* ==========================================
+   CSS MODERNO DESDE CERO
+   Capítulo 009 - Bordes
+   ========================================== */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.ejemplos {
+    padding: 20px;
+}
+
+
+.caja {
+    width: 250px;
+
+    padding: 20px;
+    margin: 20px;
+
+    text-align: center;
+}
+
+
+/* Borde continuo */
+
+.borde-solid {
+    border: 3px solid #7c3aed;
+}
+
+
+/* Borde discontinuo */
+
+.borde-dashed {
+    border: 3px dashed #7c3aed;
+}
+
+
+/* Borde de puntos */
+
+.borde-dotted {
+    border: 3px dotted #7c3aed;
+}
+
+
+/* Borde con esquinas redondeadas */
+
+.borde-redondeado {
+    border: 3px solid #7c3aed;
+    border-radius: 15px;
+}
