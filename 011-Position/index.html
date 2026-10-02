@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Moderno 011 — Position</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="inicio">
+    <p class="serie">CSS Moderno desde cero · Capítulo 011</p>
+    <h1>Position</h1>
+    <p>Explorá los cinco valores y compará sus comportamientos.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="titulo-static">
+      <h2 id="titulo-static">1. Static</h2>
+      <p>Los desplazamientos no se aplican.</p>
+
+      <p class="caja estatica">static: top y left no me desplazan.</p>
+      <p class="caja secundaria">Siguiente elemento del flujo.</p>
+    </section>
+
+    <section aria-labelledby="titulo-relative">
+      <h2 id="titulo-relative">2. Relative</h2>
+      <p>La caja se desplaza, pero conserva su espacio original.</p>
+
+      <p class="caja relativa">relative: 12 px abajo y a la derecha.</p>
+      <p class="caja secundaria">Mi posición en el flujo se conserva.</p>
+    </section>
+
+    <section aria-labelledby="titulo-absolute">
+      <h2 id="titulo-absolute">3. Absolute</h2>
+      <p>La etiqueta toma como referencia la tarjeta.</p>
+
+      <article class="tarjeta">
+        <span class="etiqueta">NUEVO</span>
+        <h3>Tarjeta de ejemplo</h3>
+        <p>La etiqueta se ubica respecto de la tarjeta.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="titulo-sticky">
+      <h2 id="titulo-sticky">4. Sticky</h2>
+      <p>Desplazá este panel. También podés enfocarlo y usar las flechas.</p>
+
+      <!-- tabindex permite recorrer el panel con el teclado. -->
+      <section class="panel-scroll" tabindex="0"
+               aria-labelledby="encabezado-sticky">
+        <h3 id="encabezado-sticky" class="encabezado-sticky">
+          Me adhiero al borde superior del panel
+        </h3>
+
+        <ol>
+          <li>Observá el encabezado.</li>
+          <li>Desplazá el contenido hacia abajo.</li>
+          <li>El encabezado usa position: sticky.</li>
+          <li>Su límite superior es top: 0.</li>
+          <li>Los elementos de la lista siguen desplazándose.</li>
+          <li>El encabezado conserva su espacio en el flujo.</li>
+          <li>Su movimiento está limitado por el contenedor.</li>
+          <li>Volvé al principio para comparar.</li>
+        </ol>
+      </section>
+    </section>
+
+    <section aria-labelledby="titulo-fixed">
+      <h2 id="titulo-fixed">5. Fixed</h2>
+      <p>
+        Desplazá la página y observá el enlace “↑ Inicio”:
+        permanece en la esquina inferior derecha.
+      </p>
+    </section>
+  </main>
+
+  <!-- Fixed: el enlace no ocupa espacio en el flujo normal. -->
+  <a class="volver-inicio" href="#inicio">↑ Inicio</a>
+
+  <footer>
+    <p>Jonatan Jubert — Learning CSS — 11/40</p>
+    <p>Pequeños pasos, grandes resultados.</p>
+  </footer>
+</body>
+</html>
