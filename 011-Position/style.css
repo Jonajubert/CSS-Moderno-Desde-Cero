@@ -1,0 +1,153 @@
+/* Base y presentación */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 16px 100px;
+  background: #07121b;
+  color: #eef2f6;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header,
+main,
+footer {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+header {
+  margin-bottom: 32px;
+}
+
+.serie,
+h1,
+h2 {
+  color: #c375ff;
+}
+
+h1 {
+  margin-block: 8px;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+main > section {
+  margin-bottom: 24px;
+  padding: 20px;
+  border: 1px solid #a84bea;
+  border-radius: 12px;
+  background: #0d1c28;
+}
+
+.caja {
+  width: calc(100% - 12px);
+  max-width: 320px;
+  margin-block: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #c375ff;
+  color: #101820;
+  font-weight: bold;
+}
+
+.secundaria {
+  margin-top: 32px;
+  background: #b5dff6;
+}
+
+/* 1. Static: top y left no producen desplazamiento. */
+.estatica {
+  position: static;
+  top: 12px;
+  left: 12px;
+}
+
+/* 2. Relative: se mueve y conserva su espacio original. */
+.relativa {
+  position: relative;
+  top: 12px;
+  left: 12px;
+}
+
+/* 3. Relative establece la referencia de la etiqueta absolute. */
+.tarjeta {
+  position: relative;
+  padding: 60px 20px 20px;
+  border-radius: 10px;
+  background: #b5dff6;
+  color: #101820;
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+}
+
+.etiqueta {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #7924b3;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* 4. El panel establece un área de desplazamiento propia. */
+.panel-scroll {
+  height: 250px;
+  overflow: auto;
+  border: 1px solid #7890a5;
+  border-radius: 8px;
+  background: #07121b;
+}
+
+.encabezado-sticky {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 16px;
+  background: #7924b3;
+  color: #ffffff;
+}
+
+.panel-scroll ol {
+  margin: 0;
+  padding: 16px 16px 16px 44px;
+}
+
+.panel-scroll li {
+  padding-block: 18px;
+  border-bottom: 1px solid #304455;
+}
+
+/* 5. Fixed: queda referido al viewport en este ejemplo. */
+.volver-inicio {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #c375ff;
+  color: #101820;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Foco visible para la navegación con teclado. */
+:focus-visible {
+  outline: 3px solid #ffdc73;
+  outline-offset: 4px;
+}
+
+footer {
+  color: #b7c8d7;
+}
