@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Moderno 012 — Z-index</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p class="serie">CSS Moderno desde cero · Capítulo 012</p>
+    <h1>Z-index</h1>
+    <p>Compará el orden de dos cajas superpuestas.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="titulo-inicial">
+      <h2 id="titulo-inicial">1. B queda delante de A</h2>
+      <p>A tiene un valor de 1 y B tiene un valor de 2.</p>
+
+      <!-- Ambas cajas pertenecen al contexto de este escenario. -->
+      <div class="escenario">
+        <p class="caja caja-a">
+          <strong>A</strong>
+          <span>z-index: 1</span>
+        </p>
+
+        <p class="caja caja-b">
+          <strong>B</strong>
+          <span>z-index: 2</span>
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="titulo-modificado">
+      <h2 id="titulo-modificado">2. A queda delante de B</h2>
+      <p>A cambia a 3. B conserva su valor de 2.</p>
+
+      <!-- La clase invertido cambia únicamente el z-index de A. -->
+      <div class="escenario invertido">
+        <p class="caja caja-a">
+          <strong>A</strong>
+          <span>z-index: 3</span>
+        </p>
+
+        <p class="caja caja-b">
+          <strong>B</strong>
+          <span>z-index: 2</span>
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="titulo-ejercicio">
+      <h2 id="titulo-ejercicio">Probalo vos</h2>
+      <p>
+        Cambiá el z-index de la caja B a 4 en style.css.
+        Después, recargá la página y compará los resultados.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Jonatan Jubert — Learning CSS — 12/40</p>
+    <p>Pequeños pasos, grandes resultados.</p>
+  </footer>
+</body>
+</html>
